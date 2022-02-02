@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100%;
+            background-image: linear-gradient(yellow, purple);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            color: purple;
+        }
+        p::first-line{
+            color: red;
+            font-size: 24px;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 48px;
+        }
+        #before::before{
+            content: "Today";
+            font-size: 24px;
+            color: blue;
+        }
+        #after::after{
+            content: "Wednesday";
+            font-size: 24px;
+            color: blue;
+        }
+        ::marker{
+            color: yellow;
+            font-size: 48px;
+        }
+        ::selection{
+            background-color: yellow;
+            color: blue;
+        }
+        #cat::before{
+            content: url(https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/08/thumbs/800x531/142774.jpg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pseudo Elements</h1>
+    </header>
+    <h2>first line</h2>
+    <p>Today we are learning about pesudo elemnts <br>Today is Wednesday <br> it is very cold </p>
+    <h2>First letter</h2>
+    <p>Today is our 48th sesssion</p>
+    <h2>before</h2>
+    <p id="before">is our sesison</p>
+    <h2>after</h2>
+    <p id="after">Today is</p>
+    <h2>marker</h2>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <h2>Selection</h2>
+    <p>plese select this sentence</p>
+    <p id="cat">This is a cat</p>
+</body>
+</html>
